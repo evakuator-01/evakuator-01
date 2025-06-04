@@ -9,11 +9,14 @@
     body {
       margin: 0;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: #f4f9ff;
-      color: #003366;
+      background: url('bg.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: #e6f0ff;
+      backdrop-filter: brightness(0.6);
     }
+
     header {
-      background-color: #007ACC;
+      background-color: rgba(0, 34, 77, 0.95);
       padding: 1rem;
       display: flex;
       justify-content: space-between;
@@ -21,23 +24,36 @@
       color: white;
       animation: fadeInDown 1s ease-out;
     }
+
     header img {
       height: 40px;
     }
+
     h1 {
       font-size: 1.5rem;
       margin: 0;
     }
+
     .main {
       text-align: center;
       padding: 3rem 1rem;
       animation: fadeInUp 1s ease-out;
     }
+
+    .main p {
+      font-size: 1.1rem;
+      background-color: rgba(0, 0, 0, 0.4);
+      padding: 1rem;
+      border-radius: 10px;
+      display: inline-block;
+    }
+
     .buttons {
       margin-top: 2rem;
     }
+
     .buttons a {
-      background-color: #007ACC;
+      background-color: #004080;
       color: white;
       padding: 1rem 2rem;
       margin: 0.5rem;
@@ -46,9 +62,11 @@
       display: inline-block;
       transition: background-color 0.3s;
     }
+
     .buttons a:hover {
-      background-color: #005fa3;
+      background-color: #0066cc;
     }
+
     .icons {
       display: flex;
       justify-content: center;
@@ -57,28 +75,39 @@
       flex-wrap: wrap;
       animation: fadeIn 2s ease-in;
     }
+
     .icons img {
       height: 64px;
+      filter: drop-shadow(0 0 5px black);
     }
+
     @keyframes fadeInDown {
       from { transform: translateY(-30px); opacity: 0; }
       to { transform: translateY(0); opacity: 1; }
     }
+
     @keyframes fadeInUp {
       from { transform: translateY(30px); opacity: 0; }
       to { transform: translateY(0); opacity: 1; }
     }
+
     @keyframes fadeIn {
       from { opacity: 0; }
       to { opacity: 1; }
     }
+
     @media (max-width: 600px) {
       h1 {
         font-size: 1.2rem;
       }
+
       .buttons a {
         padding: 0.75rem 1.5rem;
         font-size: 0.9rem;
+      }
+
+      .icons img {
+        height: 48px;
       }
     }
   </style>
@@ -86,7 +115,7 @@
 <body>
   <header>
     <h1>Эвакуатор 24/7 в Астане</h1>
-    <img src="./free-icon-kazakhstan-8351229.png" alt="Казахстан">
+    <img src="free-icon-kazakhstan-8351229.png" alt="Казахстан">
   </header>
 
   <section class="main">
@@ -96,9 +125,9 @@
       <a href="https://wa.me/77066603023" target="_blank">Написать в WhatsApp</a>
     </div>
     <div class="icons">
-      <img src="./free-icon-delivery-truck-11443012.png" alt="Доставка">
-      <img src="./free-icon-tow-truck-7573670.png" alt="Эвакуатор">
-      <img src="./free-icon-kazakhstan-8351229.png" alt="Казахстан">
+      <img src="free-icon-delivery-truck-11443012.png" alt="Доставка">
+      <img src="free-icon-tow-truck-7573670.png" alt="Эвакуатор">
+      <img src="free-icon-kazakhstan-8351229.png" alt="Казахстан">
     </div>
   </section>
 </body>

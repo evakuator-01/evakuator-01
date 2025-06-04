@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Эвакуатор Астана</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #F5FAFF;
+      color: #002F5A;
+    }
+    header {
+      background: #0079C1;
+      padding: 10px 20px;
+      color: white;
+      text-align: center;
+      font-weight: 600;
+    }
+    .hero {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 60px 20px;
+      background: linear-gradient(135deg, #0079C1, #3AB0FF);
+      color: white;
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: 32px;
+      margin-bottom: 20px;
+    }
+    .hero .btn {
+      padding: 14px 28px;
+      font-size: 18px;
+      font-weight: 600;
+      margin: 10px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: 0.3s ease;
+    }
+    .btn-call { background-color: #00D084; color: white; }
+    .btn-call:hover { background-color: #00b573; }
+    .btn-whatsapp { background-color: #25D366; color: white; }
+    .btn-whatsapp:hover { background-color: #1eb952; }
+    .services {
+      padding: 40px 20px;
+      text-align: center;
+    }
+    .services h2 {
+      font-size: 28px;
+      margin-bottom: 30px;
+    }
+    .icons {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+    .icon-block {
+      width: 120px;
+      text-align: center;
+    }
+    .icon-block img {
+      width: 64px;
+      height: 64px;
+      margin-bottom: 10px;
+    }
+    .contact {
+      padding: 40px 20px;
+      background: #E6F3FF;
+      text-align: center;
+    }
+    .contact h3 {
+      font-size: 22px;
+      margin-bottom: 10px;
+    }
+    .fixed-call {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #00D084;
+      color: white;
+      padding: 14px 18px;
+      border-radius: 50px;
+      font-weight: bold;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      z-index: 999;
+      text-decoration: none;
+    }
+    @media(max-width: 600px) {
+      .hero h1 { font-size: 24px; }
+      .btn { font-size: 16px; padding: 12px 24px; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    Эвакуатор в Астане и до 250 км — Работаем 24/7
+  </header>
+
+  <section class="hero">
+    <h1>Нужен эвакуатор? Мы рядом!</h1>
+    <a href="tel:+77066603023" class="btn btn-call">Позвонить</a>
+    <a href="https://wa.me/77066603023" class="btn btn-whatsapp">Написать в WhatsApp</a>
+  </section>
+
+  <section class="services">
+    <h2>Наши услуги</h2>
+    <div class="icons">
+      <div class="icon-block">
+        <img src="https://cdn-icons-png.flaticon.com/128/3429/3429528.png" alt="эвакуатор">
+        <div>Легковые</div>
+      </div>
+      <div class="icon-block">
+        <img src="https://cdn-icons-png.flaticon.com/128/1995/1995521.png" alt="грузовик">
+        <div>Грузовые</div>
+      </div>
+      <div class="icon-block">
+        <img src="https://cdn-icons-png.flaticon.com/128/1048/1048319.png" alt="авария">
+        <div>После ДТП</div>
+      </div>
+      <div class="icon-block">
+        <img src="https://cdn-icons-png.flaticon.com/128/809/809957.png" alt="буксировка">
+        <div>Буксировка</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact">
+    <h3>Контакты</h3>
+    <p>г. Астана и обл., до 250 км</p>
+    <p>+7 706 660 3023</p>
+    <p>Круглосуточно</p>
+  </section>
+
+  <a href="tel:+77066603023" class="fixed-call">📞 Вызов</a>
+
+</body>
+</html>
